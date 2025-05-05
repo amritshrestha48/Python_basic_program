@@ -163,10 +163,20 @@ else:
     
 
 #18. write a program to swap two variables without temp variable.
-a= 5
+'''a= 5
 b = 8
 
 #Swapping using arithmetic operations
 a, b = b, a #swapping using tuple unpacking
 
-print("After swapping: a =", a, ", b =", b)
+print("After swapping: a =", a, ", b =", b)'''
+
+#19. write aprogram to check if a number is Positive, Negative, or Zero.
+num = float(input("Enter a number:"))
+if num > 0:
+    print("Positive number")
+elif num == 0:
+    print("Zero")
+else:
+    print("Negative numnber")
+    
