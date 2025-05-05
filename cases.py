@@ -74,7 +74,7 @@ num = int(input("Enter a number: "))
 factorial = math.factorial(num)
 print(f"Factorial of {num} is {factorial}")'''
 
-#11. write a program to generate a ram=ndom number.
+#11. write a program to generate a random number.
 '''import random
 print(f"Random number: {random.randint(1, 100)}")'''
 
@@ -181,12 +181,28 @@ else:
     print("Negative numnber")'''
 
 #20. Write a program to check leap year.
-year = int(input("Enter a year: "))
+'''year = int(input("Enter a year: "))
 #divided by 4 and not divided by 100 or divided by 400 means leap year.
 if (year %4 == 0 and year % 100 != 0) or (year % 400 == 0):
     print(year, "is a leap year")
 else:
-    print(year, "is not a Leap year")
+    print(year, "is not a Leap year")'''
+
+#21. write a program to print all prime numbers in an interval of 1-10.
+start = 1
+end = 10
+for num in range(start, end + 1):
+    if num > 1:
+        for i in range(2, num):
+            #check if num is divisible by i
+            if num % i == 0:
+                break
+        else:
+            print(num)
+    
+
+
+
 
 
 
