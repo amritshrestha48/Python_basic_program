@@ -189,7 +189,7 @@ else:
     print(year, "is not a Leap year")'''
 
 #21. write a program to print all prime numbers in an interval of 1-10.
-start = 1
+'''start = 1
 end = 10
 for num in range(start, end + 1):
     if num > 1:
@@ -198,7 +198,12 @@ for num in range(start, end + 1):
             if num % i == 0:
                 break
         else:
-            print(num)
+            print(num)'''
+
+#22. write a program to display the multiplication table.
+num = int(input("Display multiplication table of: "))
+for i in range(1, 11):
+    print(f"{num} * {i} = {num * i}")
     
 
 
