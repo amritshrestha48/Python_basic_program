@@ -172,11 +172,22 @@ a, b = b, a #swapping using tuple unpacking
 print("After swapping: a =", a, ", b =", b)'''
 
 #19. write aprogram to check if a number is Positive, Negative, or Zero.
-num = float(input("Enter a number:"))
+'''num = float(input("Enter a number:"))
 if num > 0:
     print("Positive number")
 elif num == 0:
     print("Zero")
 else:
-    print("Negative numnber")
-    
+    print("Negative numnber")'''
+
+#20. Write a program to check leap year.
+year = int(input("Enter a year: "))
+#divided by 4 and not divided by 100 or divided by 400 means leap year.
+if (year %4 == 0 and year % 100 != 0) or (year % 400 == 0):
+    print(year, "is a leap year")
+else:
+    print(year, "is not a Leap year")
+
+
+
+
