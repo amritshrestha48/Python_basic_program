@@ -201,9 +201,18 @@ for num in range(start, end + 1):
             print(num)'''
 
 #22. write a program to display the multiplication table.
-num = int(input("Display multiplication table of: "))
+'''num = int(input("Display multiplication table of: "))
 for i in range(1, 11):
-    print(f"{num} * {i} = {num * i}")
+    print(f"{num} * {i} = {num * i}")'''
+
+#23. write a program to print fibonacci series.
+n = int(input("Enter the number of terms: "))
+a, b = 0, 1 #Fibonacci series starts with 0 and 1
+print("Fibonacci series:")
+for _ in range(n):
+    print(a, end=" ")
+    a, b = b, a + b #update the values of a and b
+
     
 
 
