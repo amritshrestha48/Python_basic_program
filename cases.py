@@ -115,18 +115,19 @@ else:
     print(num, "is not a prime number")'''
 
 #17. write a program to check if a number is palindrome or not. #121, 12321 are palindrome numbers
-'''num = int(input("Enter a number: "))
-original = num          
+'''num = int(input("Enter a number: "))          
 reverse = 0
-while num > 0:                      #loop until num is greater than 0
-    digit = num % 10                #get the last digit of num
-    reverse = reverse * 10 + digit  #update reverse
-    num = num // 10                 #remove the last digit from num
+temp = num
+
+while temp > 0:                      #loop until temp is greater than 0
+    digit = temp % 10                #get the last digit of temp
+    reverse = reverse * 10 + digit   #update reverse
+    temp = temp // 10                #remove the last digit from temp
  
-    if original == reverse:         #check if original and reverse are equal
-        print(original, "is a palindrome")
-    else:
-        print(original, "is not a palindrome")'''
+if num == reverse:                   #check if num is equal to reverse
+        print(num, "is a palindrome")
+else:
+        print(num, "is not a palindrome")'''
 
 #18. write a program to solve quadratic equation. #ax^2 + bx + c = 0
 '''import cmath
@@ -229,16 +230,16 @@ else:
     print(num, "is not an Armstrong number")'''
 
 #25. write a program to find the sum of digits of a number. #123=1+2+3=6
-num = int(input("Enter a number:"))
+'''num = int(input("Enter a number:"))
 sum = 0
 while num > 0:
     digit = num % 10  #get the last digit of sum
     sum +=digit       #add the digit to sum
     num = num // 10   #remove the last digit from num
 
-print("Sum of digits:", sum) #display the sum of digits
-    
+print("Sum of digits:", sum) #display the sum of digits'''
 
+#26.
 
 
     
