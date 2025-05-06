@@ -248,10 +248,16 @@ gcd = math.gcd(num1, num2)  #using math module to find GCD
 print("GCD is:", gcd)       #display the GCD of two numbers'''
 
 #27. write a program to find the LCM(least common multiple) of two numbers. #LCM of 12 and 15 is 60
-import math
+'''import math
 num1 = int(input("Enter first number: "))
 num2 = int(input("Enter second number: "))
 lcm = (num1 * num2) // math.gcd(num1, num2) #using math mnodule to find LCM
 
-print("LCM is:", lcm)
+print("LCM is:", lcm)'''
 
+#28. write a program to find the sum of n natural numbers. #1+2+3+4+5=15
+n = int(input("Enter a number: "))
+
+sum_natural_numbers = n * (n + 1) // 2 #sum of n natural numbers formula
+
+print("Sum of first", n, "natural numbers is:", sum_natural_numbers)
