@@ -239,22 +239,19 @@ while num > 0:
 
 print("Sum of digits:", sum) #display the sum of digits'''
 
-#26. write a program to find the GCD(greatest common divisor) of two numbers. #GCD of 12 and 15 is 3
-import math
+#26. write a program to find the GCD/HCF(greatest common divisor/Highest common factor )  of two numbers. #GCD of 12 and 15 is 3
+'''import math
 num1 = int(input("Enter first number: "))
 num2 = int(input("Enter second number: "))
 gcd = math.gcd(num1, num2)  #using math module to find GCD
 
-print("GCD is:", gcd)       #display the GCD of two numbers
+print("GCD is:", gcd)       #display the GCD of two numbers'''
 
+#27. write a program to find the LCM(least common multiple) of two numbers. #LCM of 12 and 15 is 60
+import math
+num1 = int(input("Enter first number: "))
+num2 = int(input("Enter second number: "))
+lcm = (num1 * num2) // math.gcd(num1, num2) #using math mnodule to find LCM
 
-
-
-    
-
-
-
-
-
-
+print("LCM is:", lcm)
 
