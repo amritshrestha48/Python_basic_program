@@ -214,7 +214,7 @@ for _ in range(n):
     a, b = b, a + b #update the values of a and b'''
 
 #24. write a program to check Armstrong number. # 153 = 1^3 + 5^3 + 3^3
-num = int(input("Enter a number: "))
+'''num = int(input("Enter a number: "))
 sum = 0    #initialize sum to 0
 temp = num #store the original number
 
@@ -226,8 +226,17 @@ while temp > 0:
 if num == sum: #check if num is equal to sum
     print(num, "is an Armstrong number")
 else:
-    print(num, "is not an Armstrong number")
+    print(num, "is not an Armstrong number")'''
 
+#25. write a program to find the sum of digits of a number. #123=1+2+3=6
+num = int(input("Enter a number:"))
+sum = 0
+while num > 0:
+    digit = num % 10  #get the last digit of sum
+    sum +=digit       #add the digit to sum
+    num = num // 10   #remove the last digit from num
+
+print("Sum of digits:", sum) #display the sum of digits
     
 
 
