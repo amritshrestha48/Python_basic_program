@@ -1,11 +1,11 @@
 #1. Find Even Numbers in a Given Range
-'''for num in range(1,21):
-    if num % 2 == 0:
+'''for num in range(1,21): 
+    if num % 2 == 0:  #check if num is even
         print(num)'''
 
 #2. Find odd numbers in a given range
 '''for num in range(1,21):
-    if num % 2 != 0:
+    if num % 2 != 0:   #check if num is odd
         print(num, end = " ")'''
 
 #3. Check if a Number is Even or Odd
@@ -21,14 +21,14 @@ else:
 print("Largest number:", max(numbers))'''
 
 #5. Reverse a String
-'''text = "Python"
-print("Reversed:", text[::-1])'''
+'''text = "Python" 
+print("Reversed:", text[::-1])''' 
 
 #6. Write a program to do arthmetical operations addition and division.
 #Addition
 '''num1 = float(input("Enter first number: "))
 num2 = float(input("Enter second number: "))
-sum = num1 + num2
+sum = num1 + num2  #addition
 print("Sum:", sum)
 '''
 #Division
@@ -43,13 +43,13 @@ else:
 #7. write a program to find the area of a traingle.
 '''base = float(input("Enter the base of the triangle: "))
 height = float(input("Enter the height of the traingle: "))
-area = 0.5 * base * height
+area = 0.5 * base * height  #area of triangle
 print("Area of the triangle:", area)'''
 
 #8. write a program to find the area of a circle.
 '''import math
 radius = float(input("Enter the radius of the circle: "))
-area = math.pi * radius ** 2
+area = math.pi * radius ** 2  #area of circle
 print("Area of the circle:", area)'''
 
 #9. write a program to swap two variables.
@@ -64,48 +64,48 @@ print(f"After swapping: a = {a}, b = {b}")'''
 #10. write a program to find the factorial of a number.
 '''num = int(input("Enter a number: "))
 factorial = 1
-for i in range (1, num + 1):
-    factorial *= i
+for i in range (1, num + 1):  #loop from 1 to num
+    factorial *= i  #multiply the numbers from 1 to num
     print(f"Factorial of {num} is {factorial}")'''
           
 #or
 '''import math
 num = int(input("Enter a number: "))
-factorial = math.factorial(num)
+factorial = math.factorial(num) #using math module to find factorial
 print(f"Factorial of {num} is {factorial}")'''
 
 #11. write a program to generate a random number.
-'''import random
-print(f"Random number: {random.randint(1, 100)}")'''
+'''import random 
+print(f"Random number: {random.randint(1, 100)}")'''  
 
 #12. write a program to convert kilometer to miles.
 ''''kilometers = float(input("Enter distance in Kilomters: "))
-miles = kilometers * 0.621371
+miles = kilometers * 0.621371 #conversion factor
 print(f"{kilometers} kilometers is equal to {miles} miles")'''
 
 #13. write  a program to convert celsius to farenheit.
 '''celsius = float(input("Enter temperature in Celsius: "))
-farenheit = (celsius * 9/5) + 32
+farenheit = (celsius * 9/5) + 32  #conversion formula
 print(f"{celsius} Celsious is equal to {farenheit} Farenheit")'''
 
 #14. write a program to convert farenheit to celsius.
 '''farenheit = float(input("Enter temperature in Farenheit: "))
-celsius = (farenheit - 32) * 5/9
+celsius = (farenheit - 32) * 5/9 #conversion formula
 print(f"{farenheit} Farenheit is equal to {celsius} Celsius")'''
 
 #15. write a program to display calender.
 '''import calendar
 year = int(input("Enter year: "))
-month = int(input("Enter month: "))
-print(calendar.month(year, month))'''
+month = int(input("Enter month: ")) 
+print(calendar.month(year, month)) #display the calender of the month and year''' 
 
 #16. write a program to check if a number is prime or not.
 '''num = int(input("Enter a number: "))
-if num > 1:
-    is_prime = True
-    for i in range(2, num):
-        if num % i == 0:
-            is_prime = False
+if num > 1:                   #check if num is greater than 1
+    is_prime = True           #assume num is prime
+    for i in range(2, num):   #loop from 2 to num-1
+        if num % i == 0:      #check if num is divisible by i
+            is_prime = False  #num is not prime
             break
     if is_prime:
         print(num, "is a prime number")
@@ -116,14 +116,14 @@ else:
 
 #17. write a program to check if a number is palindrome or not.
 '''num = int(input("Enter a number: "))
-original = num
+original = num          
 reverse = 0
-while num > 0:
-    digit = num % 10
-    reverse = reverse * 10 + digit
-    num = num // 10
-
-    if original == reverse:
+while num > 0:                      #loop until num is greater than 0
+    digit = num % 10                #get the last digit of num
+    reverse = reverse * 10 + digit  #update reverse
+    num = num // 10                 #remove the last digit from num
+ 
+    if original == reverse:         #check if original and reverse are equal
         print(original, "is a palindrome")
     else:
         print(original, "is not a palindrome")'''
@@ -138,8 +138,8 @@ c = float(input("Enter coefficient c: "))
 
 #calculate discriminant
 discriminant = b ** 2 - 4 * a * c
-#Check if discriminant is positive, nefgative or zero
-if discriminant > 0:
+#Check if discriminant is positive, negative or zero
+if discriminant > 0: 
     #two real and distnict roots
     root1 = (-b + cmath.sqrt(discriminant)) / (2 * a)
     root2 = (-b - cmath.sqrt(discriminant)) / (2 * a)
@@ -155,7 +155,7 @@ else:
     #roots are complex
     real_part = -b / (2 * a)
     imaginary_part = cmath.sqrt(-discriminant) / 2 * a
-    root1 = complex(real_part, imaginary_part)
+    root1 = complex(real_part, imaginary_part) 
     root2 = complex(real_part, -imaginary_part)
     print("Roots are complex and different")
     print(f"Root 1: {root1}")
@@ -203,15 +203,15 @@ for num in range(start, end + 1):
 #22. write a program to display the multiplication table.
 '''num = int(input("Display multiplication table of: "))
 for i in range(1, 11):
-    print(f"{num} * {i} = {num * i}")'''
+    print(f"{num} * {i} = {num * i}")''' 
 
 #23. write a program to print fibonacci series.
-n = int(input("Enter the number of terms: "))
+'''n = int(input("Enter the number of terms: "))
 a, b = 0, 1 #Fibonacci series starts with 0 and 1
 print("Fibonacci series:")
 for _ in range(n):
     print(a, end=" ")
-    a, b = b, a + b #update the values of a and b
+    a, b = b, a + b #update the values of a and b'''
 
     
 
